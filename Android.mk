@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), crackling)
+ifeq ($(TARGET_DEVICE), seed)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

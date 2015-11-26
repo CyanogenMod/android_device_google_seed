@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=crackling
-export VENDOR=wileyfox
+export DEVICE=seed
+export VENDOR=google
 
 if [ $# -eq 0 ]; then
   SRC=adb

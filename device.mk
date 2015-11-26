@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/wileyfox/crackling/crackling-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/seed/seed-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -116,8 +116,8 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # Recovery
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/crackling-releasekey
+#PRODUCT_EXTRA_RECOVERY_KEYS += \
+#    $(LOCAL_PATH)/seed-releasekey
 
 # RIL
 PRODUCT_PACKAGES += \

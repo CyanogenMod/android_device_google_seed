@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/crackling/full_crackling.mk)
+$(call inherit-product, device/google/seed/full_seed.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_crackling
-BOARD_VENDOR := wileyfox
-PRODUCT_DEVICE := crackling
+PRODUCT_NAME := cm_seed
+BOARD_VENDOR := google
+PRODUCT_DEVICE := seed
 
-PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
+PRODUCT_GMS_CLIENTID_BASE := android-google
 
-PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Swift
+PRODUCT_MANUFACTURER := Google
+PRODUCT_MODEL := Google Seed
 
-PRODUCT_BRAND := Wileyfox
-TARGET_VENDOR := wileyfox
-TARGET_VENDOR_PRODUCT_NAME := Swift
-TARGET_VENDOR_DEVICE_NAME := crackling
+PRODUCT_BRAND := Google
+TARGET_VENDOR := Google
+TARGET_VENDOR_PRODUCT_NAME := Seed
+TARGET_VENDOR_DEVICE_NAME := seed

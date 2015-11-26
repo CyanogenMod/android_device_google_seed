@@ -13,9 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+FORCE_32_BIT := true
+
 -include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/wileyfox/crackling
+DEVICE_PATH := device/google/seed
 
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -26,7 +28,10 @@ TARGET_CPU_CORTEX_A53 := true
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
-TARGET_KERNEL_CONFIG := cyanogenmod_crackling-64_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/seed
+TARGET_KERNEL_CONFIG := msm8916_a1_defconfig
+TARGET_KERNEL_APPEND_DTB := true
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
@@ -61,19 +66,19 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1610612224
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 13295385600
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := crackling,vixen
+TARGET_OTA_ASSERT_DEVICE := seed
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Wifi - EAP-SIM
-CONFIG_EAP_PROXY := qmi
-CONFIG_EAP_PROXY_DUAL_SIM := true
+#CONFIG_EAP_PROXY := qmi
+#CONFIG_EAP_PROXY_DUAL_SIM := true
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/wileyfox/crackling/sepolicy
+    device/google/seed/sepolicy
 
 
 # inherit from the proprietary version
--include vendor/wileyfox/crackling/BoardConfigVendor.mk
+-include vendor/google/seed/BoardConfigVendor.mk

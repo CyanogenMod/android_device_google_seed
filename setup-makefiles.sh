@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=crackling
-VENDOR=wileyfox
+DEVICE=seed
+VENDOR=google
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -129,8 +129,8 @@ PRODUCT_PACKAGES += \\
 PRODUCT_PACKAGES += \\
     libtime_genoff
 
-PRODUCT_PACKAGES += \\
-    libwpa_qmi_eap_proxy
+#PRODUCT_PACKAGES += \\
+#    libwpa_qmi_eap_proxy
 
 \$(call inherit-product, vendor/$VENDOR/$DEVICE/$DEVICE-vendor-blobs.mk)
 EOF
@@ -172,12 +172,12 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),crackling)
+ifeq (\$(TARGET_DEVICE),seed)
 ifeq (\$(QCPATH),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -188,7 +188,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -198,7 +198,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := shutdownlistener
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -208,7 +208,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := TimeService
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -218,7 +218,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := com.qrd.wappush
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/com.qrd.wappush.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -228,7 +228,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := qcnvitems
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/qcnvitems.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -238,7 +238,7 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -248,200 +248,158 @@ include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libdiag
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libdiag.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdiag.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libdiag.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libdsutils
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libdsutils.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdsutils.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libdsutils.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libidl
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libidl.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libidl.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libidl.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_api_v02.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libloc_api_v02.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/lib/libloc_api_v02.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libloc_ds_api
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_ds_api.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libloc_ds_api.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/lib/libloc_ds_api.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqct_resampler
-LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/vendor/lib/libqct_resampler.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := 32
 LOCAL_PROPRIETARY_MODULE := true
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libmm-abl
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libmm-abl.so
+LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := 64
 LOCAL_PROPRIETARY_MODULE := true
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libmdmdetect
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libmdmdetect.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libmdmdetect.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libmdmdetect.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqcci_legacy
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqcci_legacy.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqcci_legacy.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqcci_legacy.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqmi
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmi.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqmi.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqmi_client_qmux
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmi_client_qmux.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_client_qmux.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqmi_client_qmux.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqmiservices
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmiservices.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmiservices.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqmiservices.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 LOCAL_PROPRIETARY_MODULE := true
 include \$(BUILD_PREBUILT)
 
-include \$(CLEAR_VARS)
-LOCAL_MODULE := libwpa_qmi_eap_proxy
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/lib64/libwpa_qmi_eap_proxy.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_MULTILIB := 64
-LOCAL_PROPRIETARY_MODULE := true
-include \$(BUILD_PREBUILT)
+#include \$(CLEAR_VARS)
+#LOCAL_MODULE := libwpa_qmi_eap_proxy
+#LOCAL_MODULE_OWNER := google
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := .so
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
+#LOCAL_PROPRIETARY_MODULE := true
+#include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libmm-disp-apis
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libmm-disp-apis.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libmm-disp-apis.so
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/vendor/lib/libmm-disp-apis.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-LOCAL_MULTILIB := both
+LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 LOCAL_PROPRIETARY_MODULE := true
 include \$(BUILD_PREBUILT)
 
 \$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
-\$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 
 endif
 endif
