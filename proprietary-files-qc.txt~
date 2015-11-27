@@ -170,7 +170,7 @@ vendor/lib/libOmxQcelp13Dec.so
 -vendor/lib/libSHIMDivxDrm.so
 
 # Perf
-vendor/bin/perfd
+bin/perfd
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
