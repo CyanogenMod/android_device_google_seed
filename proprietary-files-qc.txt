@@ -32,6 +32,7 @@ vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
@@ -119,10 +120,13 @@ etc/permissions/com.qualcomm.location.xml
 -lib/libloc_ds_api.so
 priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib/hw/flp.default.so
+vendor/lib/libdataitems.so
+vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
+vendor/lib/liblocationservice_glue.so
 vendor/lib/liblowi_client.so
 vendor/lib/libquipc_os_api.so
 vendor/lib/libulp2.so
@@ -133,27 +137,37 @@ vendor/lib/libxtwifi_ulp_adaptor.so
 # Graphics
 vendor/lib/libscale.so
 vendor/lib/egl/eglsubAndroid.so
+vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libESXEGL_adreno.so
+vendor/lib/egl/libESXGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libESXGLESv2_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/egl/libRBEGL_adreno.so
+vendor/lib/egl/libRBGLESv1_CM_adreno.so
+vendor/lib/egl/libRBGLESv2_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libc2d30-a3xx.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/libOpenCL.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsc-a3xx.so
-vendor/lib/libbccQTI.so
+-vendor/lib/libbccQTI.so
 
 # Graphics firmware
 etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
+-vendor/firmware/a330_pfp.fw
+-vendor/firmware/a330_pm4.fw
 
 # Media
 lib/libOmxVdecHevc.so
@@ -193,16 +207,17 @@ bin/irsc_util
 vendor/lib/libdsi_netctrl.so
 -vendor/lib/libdsutils.so
 -vendor/lib/libidl.so
--vendor/lib/libqcci_legacy.so
+vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
-vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+-vendor/lib/libqmi_cci.so
 -vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 -vendor/lib/libqmiservices.so
--vendor/lib/libqmi.so
+vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 
 # Radio
@@ -222,6 +237,7 @@ etc/permissions/qcrilhook.xml
 lib/librmnetctl.so
 -vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
+-vendor/lib/liblqe.so
 -vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so

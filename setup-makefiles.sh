@@ -120,12 +120,10 @@ PRODUCT_PACKAGES += \\
     libdsutils \\
     libidl \\
     libmdmdetect \\
-    libqcci_legacy \\
-    libqmi \\
+    libqmi_cci \\
     libqmi_client_qmux \\
     libqmiservices \\
-    libqmi
-
+    
 PRODUCT_PACKAGES += \\
     libtime_genoff
 
@@ -327,25 +325,15 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 include \$(BUILD_PREBUILT)
 
-include \$(CLEAR_VARS)
-LOCAL_MODULE := libqcci_legacy
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqmi_cci
 LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/vendor/lib/libqcci_legacy.so
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqmi_cci.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-include \$(BUILD_PREBUILT)
-
-include \$(CLEAR_VARS)
-LOCAL_MODULE := libqmi
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/vendor/lib/libqmi.so
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
-include \$(BUILD_PREBUILT)
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
+include $(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libqmi_client_qmux
