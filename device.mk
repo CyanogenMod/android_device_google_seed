@@ -131,6 +131,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    accelcal \
+    AccCalibration \
     sensord \
     sensors.msm8916
 
