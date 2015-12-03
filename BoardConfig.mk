@@ -28,16 +28,19 @@ TARGET_CPU_CORTEX_A53 := true
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
-#TARGET_KERNEL_SOURCE := kernel/google/seed
-#TARGET_KERNEL_CONFIG := msm8916_a1_defconfig
-TARGET_KERNEL_CONFIG := cyanogenmod_crackling_defconfig
-#TARGET_KERNEL_APPEND_DTB := true
-#BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+TARGET_KERNEL_SOURCE := kernel/google/seed
+TARGET_KERNEL_CONFIG := msm8916_a1_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_crackling_defconfig
+TARGET_KERNEL_APPEND_DTB := true
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # OTA format
-#BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := false
 
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
+
+#Audio
+USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
