@@ -35,7 +35,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_crackling_defconfig
 #BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # OTA format
-#BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := false
 
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
@@ -73,7 +73,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1610612224
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 13295385600
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := seed, h220, g1
+TARGET_OTA_ASSERT_DEVICE := seed,Seed,h220,H220,g1,G1
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Wifi - EAP-SIM
@@ -86,6 +86,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_SEPOLICY_DIRS += \
     device/google/seed/sepolicy
 
+# Enable keymaster app checking
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # inherit from the proprietary version
 -include vendor/google/seed/BoardConfigVendor.mk
