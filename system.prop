@@ -13,6 +13,7 @@ persist.radio.multisim.config=dsds
 persist.radio.custom_ecc=1
 persist.radio.ecc_hard_1=998
 persist.radio.ecc_hard_count=1
+persist.data.qmi.adb_logmask=0
 
 #Enable B service adj transition by default
 ro.sys.fw.bservice_enable=true
