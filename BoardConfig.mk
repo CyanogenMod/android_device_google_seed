@@ -83,8 +83,5 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_SEPOLICY_DIRS += \
     device/google/seed/sepolicy
 
-# Enable keymaster app checking
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
-
 # inherit from the proprietary version
 -include vendor/google/seed/BoardConfigVendor.mk
