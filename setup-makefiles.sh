@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \\
     libmdmdetect \\
     libqmi_cci \\
     libqmi_client_qmux \\
-    libqmiservices \\
+    libqmiservices
     
 PRODUCT_PACKAGES += \\
     libtime_genoff
