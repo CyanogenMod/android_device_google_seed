@@ -13,6 +13,7 @@ persist.radio.multisim.config=dsds
 persist.radio.custom_ecc=1
 persist.radio.ecc_hard_1=998
 persist.radio.ecc_hard_count=1
+ro.telephony.ril.config=simactivation
 
 #Enable B service adj transition by default
 ro.sys.fw.bservice_enable=true
