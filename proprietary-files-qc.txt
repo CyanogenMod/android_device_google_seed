@@ -230,10 +230,10 @@ etc/permissions/qcrilhook.xml
 -framework/com.qrd.wappush.jar
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
-lib/librmnetctl.so
--vendor/lib/libcneapiclient.so
+lib/libril.so
+vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
--vendor/lib/liblqe.so
+vendor/lib/liblqe.so
 -vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so
@@ -255,4 +255,3 @@ vendor/lib/libTimeService.so
 
 # WLAN
 lib/libwcnss_qmi.so
--lib/libwpa_qmi_eap_proxy.so
