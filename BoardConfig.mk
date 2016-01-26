@@ -30,9 +30,6 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_seed_defconfig
 
-# OTA format
-BLOCK_BASED_OTA := false
-
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
 # Bluetooth
