@@ -67,7 +67,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/google/seed/sepolicy
+    $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
 -include vendor/google/seed/BoardConfigVendor.mk
