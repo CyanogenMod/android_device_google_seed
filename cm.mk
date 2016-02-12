@@ -18,7 +18,7 @@ $(call inherit-product, device/google/seed/full_seed.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 #Assert
-TARGET_OTA_ASSERT_DEVICE := seed,Seed,h220,H220,g1,G1,IQ_II
+TARGET_OTA_ASSERT_DEVICE := seed,Seed,h220,H220,g1,G1,IQ_II,crackling
 
 PRODUCT_NAME := cm_seed
 BOARD_VENDOR := google
