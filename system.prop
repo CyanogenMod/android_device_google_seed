@@ -18,7 +18,6 @@ persist.radio.multisim.config=dsds
 persist.radio.custom_ecc=1
 persist.radio.ecc_hard_1=998
 persist.radio.ecc_hard_count=1
-ro.telephony.ril.config=simactivation
 
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
