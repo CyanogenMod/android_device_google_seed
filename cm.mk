@@ -17,9 +17,6 @@ $(call inherit-product, device/google/seed/full_seed.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-#Assert
-TARGET_OTA_ASSERT_DEVICE := seed,Seed,h220,H220,g1,G1,IQ_II,crackling
-
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
