@@ -56,3 +56,5 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC"
 extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
 "$MY_DIR"/setup-makefiles.sh
+
+"$CM_ROOT"/device/qcom/common/extractors/extract-files.sh "$SRC" msm8916 graphics
