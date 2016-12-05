@@ -1,2 +1,0 @@
-#type for perfd
-type sysfs_performance, sysfs_type, fs_type;
