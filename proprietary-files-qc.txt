@@ -1,9 +1,9 @@
 # ADSP (jalebi)
-bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvopt.so
+bin/adsprpcd|2128affb2fe10d4c6475002d0b04ebb1f9e321f7
+vendor/lib/libadsprpc.so|ae59d4ccc89ee80fa995f054d9cb366211e1be97
+vendor/lib/libfastcvopt.so|8137f5d8bbc963ca4ab0159919a52d0d6f6fc2c5
 
-# Audio (seed-NRD90R)
+# Audio (seed)
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -11,17 +11,17 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
 # Audio (crackling)
-vendor/lib/libFlacSwDec.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+vendor/lib/libFlacSwDec.so|e9fa8c6d5d8bb6d64d23c41028151c04e107da53
+vendor/lib/soundfx/libqcbassboost.so|0a4bca9cb849e7485ea150d97970f52142e9bb2c
+vendor/lib/soundfx/libqcreverb.so|d1655a55785b08956808f90f5e91a1d3660e80aa
+vendor/lib/soundfx/libqcvirt.so|6efbb9a93ac3f54640377e54fa00e21d2770638b
 
-# Bluetooth (seed-NRD90R)
+# Bluetooth (seed)
 bin/btnvtool
 bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
-# Camera (seed-NRD90R)
+# Camera (seed)
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8916.so
 lib/libmmcamera_interface.so
@@ -57,7 +57,7 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
 
-# Camera actuator (seed-NRD90M)
+# Camera actuator (seed)
 vendor/lib/libactuator_a3907_camcorder.so
 vendor/lib/libactuator_a3907_camera.so
 vendor/lib/libactuator_a3907.so
@@ -98,7 +98,7 @@ vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so
 vendor/lib/libactuator_rohm_bu64243gwz_camera.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
-# Camera chromatix (seed-NRD90M)
+# Camera chromatix (seed)
 vendor/lib/libchromatix_imx132_common.so
 vendor/lib/libchromatix_imx132_default_video.so
 vendor/lib/libchromatix_imx132_liveshot.so
@@ -301,7 +301,7 @@ vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so
 vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so
 vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so
 
-# Camera eeprom (seed-NRD90M)
+# Camera eeprom (seed)
 vendor/lib/libmmcamera_s5k3m2_olqba20_eeprom.so
 vendor/lib/libmmcamera_s5k5e2_olq5f19_eeprom.so
 vendor/lib/libmmcamera_s5k4h5_cma334_eeprom.so
@@ -314,13 +314,13 @@ vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
 
-# Camera firmware (seed-NRD90R)
+# Camera firmware (seed)
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 
-# Camera sensors (seed-NRD90M)
+# Camera sensors (seed)
 vendor/lib/libmmcamera_imx132.so
 vendor/lib/libmmcamera_imx134.so
 vendor/lib/libmmcamera_imx135.so
@@ -356,7 +356,7 @@ vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so
 vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so
 vendor/lib/libmmcamera_sp1628.so
 
-# DRM (seed-NRD90R)
+# DRM (seed)
 bin/qseecomd
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
@@ -370,7 +370,7 @@ vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
-# GPS (seed-NRD90R)
+# GPS (seed)
 lib/hw/gps.default.so
 lib/libgps.utils.so
 lib/libloc_core.so
@@ -382,92 +382,92 @@ vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 
-# Graphics firmware (seed-NRD90R)
+# Graphics firmware (seed)
 etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
 -vendor/firmware/a330_pfp.fw
 -vendor/firmware/a330_pm4.fw
 
 # Media (crackling)
-lib/libOmxVdecHevc.so
-vendor/lib/libHevcSwDecoder.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmmosal.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
+lib/libOmxVdecHevc.so|560d662a6120cc23bc0db9af51230ce60d756eda
+vendor/lib/libHevcSwDecoder.so|70e9c70aeb4a245433f2501d47ee01eb9ba3e5e0
+vendor/lib/libI420colorconvert.so|4fba21c63702d4ce153c5f9425d0dd520472d038
+vendor/lib/libmmosal.so|89dfcf01a209a6b0ea586d292753c0502312e4bd
+vendor/lib/libmm-color-convertor.so|a6c53cd2fc0e8c84d8f49c712d923e0425257b17
+vendor/lib/libOmxAacDec.so|fd3b375d5f477474154de3ac4a7db9b91158f0f4
+vendor/lib/libOmxEvrcDec.so|f5f8b7702f0e6858ff473d740be0bcf886abaa9a
+vendor/lib/libOmxQcelp13Dec.so|2766d69b1797441ba2bdc9ab0928c22d1ecc99a9
 
-# Perf (seed-NRD90R)
+# Perf (seed)
 vendor/bin/perfd
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing (jalebi)
-bin/mm-pp-daemon
-vendor/lib/libdisp-aba.so
-vendor/lib/libmm-abl.so
-vendor/lib/libmm-abl-oem.so
-vendor/lib/libmm-als.so
--vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-qdcm.so
+bin/mm-pp-daemon|b8c3cc40ae4cadec31cfa76c9b9a51df35b96801
+vendor/lib/libdisp-aba.so|1b9640a8a5ea769fc5f5599bb26f679b7b984736
+vendor/lib/libmm-abl.so|ed53223a798c1897fc4368a3ce2c46c34e44c2e0
+vendor/lib/libmm-abl-oem.so|5940ead47b7ef85315d0ca0ad7ba126d2ac10b06
+vendor/lib/libmm-als.so|0d3504a0536c0ceb9f4c20f13f7abd5558c068f2
+-vendor/lib/libmm-disp-apis.so|9e93b3bbca952dd7e474ba643431ddcacd6e9792
+vendor/lib/libmm-qdcm.so|c04317a68c2b6581fc908edc9137c8fae8ef1575
 
 
-# Power (seed-NRD90R)
+# Power (seed)
 bin/vm_bms
 
 # Qualcomm framework (jalebi)
-bin/irsc_util
-vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqmi.so
-vendor/lib/libsmemlog.so
+bin/irsc_util|787bd12a31ec581ee515ee32b610e56fc2833863
+vendor/lib/libdiag.so|5cae33cc79a68c8916a133de617f4cbecbef98ac
+vendor/lib/libdsi_netctrl.so|29654040a4842df38fad8a8dc896857460667819
+vendor/lib/libdsutils.so|d4bf9e98c65fe8adb36cad85ebf48526137b30be
+vendor/lib/libidl.so|ebbfe34beebb25e6178e3dc0d79152cdd81a93e1
+vendor/lib/libqcci_legacy.so|8e6bfb1b13f055a8fd6df3e313f2806981f8291d
+vendor/lib/libqdi.so|15646b0b33be05f216013a57ce659f12385316cb
+vendor/lib/libqdp.so|da49dfa248e3eccc9273d686caff8063428217e2
+vendor/lib/libqmi_cci.so|eef6bba94332795ac622b1e682122c3517d0a4e1
+vendor/lib/libqmi_client_helper.so|aea48215726c8df37e4ab27a747ef2178bbb5fe6
+vendor/lib/libqmi_client_qmux.so|9f296dd1b6a7f4ebd12773351f6fd37b7a42fb12
+vendor/lib/libqmi_common_so.so|e756f9640d0661446c8bf184d0e24b8c315f6c78
+vendor/lib/libqmi_csi.so|dffd42c56773fbc286945230184448bf24598890
+vendor/lib/libqmi_encdec.so|124cd8ab6ed24f2b315ece15e18a2345815d6901
+vendor/lib/libqmiservices.so|25e8803032ab9c191ffcf45507286abc72460c7d
+vendor/lib/libqmi.so|5251426638ec6ace5e399e9c541f3c846acb9f52
+vendor/lib/libsmemlog.so|b87c633d0faa143db4744bd17de5b03d600df15e
 
 # Radio (jalebi)
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--app/shutdownlistener/shutdownlistener.apk
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rfs_access
-bin/rmt_storage
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
--framework/qcnvitems.jar
--framework/qcrilhook.jar
-vendor/lib/libcneapiclient.so
-vendor/lib/libconfigdb.so
-vendor/lib/liblqe.so
-vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so
-vendor/lib/libperipheral_client.so
-vendor/lib/libril-qc-qmi-1.so
-vendor/lib/libril-qc-radioconfig.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libsystem_health_mon.so
-vendor/lib/libxml.so
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|250eeb259f908070ac302ce66832d0c030473015
+-app/shutdownlistener/shutdownlistener.apk|bb1577ef19b491cbd343a15714d9dd7e5e761689
+bin/netmgrd|da382606d916b331a8bd5eae151dbd245ae26063 
+bin/qmuxd|6ff5f50f05973c34cc4516e5b4f5ca9c400bf94d
+bin/radish|cd024f6b00374889b2d8c32e56aa615488dfa1e2
+bin/rfs_access|25e77d90e5570369a7e1b2d3e759bd54e441c47d
+bin/rmt_storage|079e247fbebeb215de4775a842d77b086304f322
+etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
+etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+-framework/qcnvitems.jar|c07b1cc603c84414ee1b33749ea492b9d7a9e181 
+-framework/qcrilhook.jar|d8cd25a1ca0a49c1a69d856d8846a517725785ec
+vendor/lib/libcneapiclient.so|1cd1a5a4db60d1b2f99a124663eba3b10cbb5c89
+vendor/lib/libconfigdb.so|0baff7fcba0f1a22b8ec1b08f6068579ed527452
+vendor/lib/liblqe.so|e4a40f8675c5b52f1bb71aa2fea62d7ffcd9b003
+vendor/lib/libmdmdetect.so|00dcc86d87300acbc10e4916a543717ccfc776db
+vendor/lib/libnetmgr.so|9933916723c598d7c5b6ed3c12cab9ec852a20e8
+vendor/lib/libperipheral_client.so|d5c62a77a1fee7797f5e74cfbfa8854d5f0ea52b
+vendor/lib/libril-qc-qmi-1.so|50b415e0bee72604380115f4450d79a50ffae995
+vendor/lib/libril-qc-radioconfig.so|7fe31633a1a4f5ca291e56456017ff1717907fc2
+vendor/lib/libril-qcril-hook-oem.so|72d922cbe67c1387b501e32547630dbb19fc6e5b
+vendor/lib/libsystem_health_mon.so|808950a838e8f01f0c6efe1ef25acc4ca3376a45
+vendor/lib/libxml.so|8b9cae9b4d1525e7fea093d6a53f363c842f3076
 
-# Thermal (seed-NRD90R)
+# Thermal (seed)
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
-# Time services (seed-NRD90R)
+# Time services (seed)
 -app/TimeService/TimeService.apk
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 # WLAN (crackling)
-lib/libwcnss_qmi.so
+lib/libwcnss_qmi.so|371a27ab7bcb8354433d6028a5ad422ebc1783f2
