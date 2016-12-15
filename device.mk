@@ -23,10 +23,4 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
 
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=seed \
-    BUILD_FINGERPRINT=google/seed_l8150/seed:7.1.1/NMF26F/3425388:user/release-keys \
-    PRIVATE_BUILD_DESC="seed_l8150-user 7.1.1 NMF26F 3425388 release-keys"
-
 $(call inherit-product-if-exists, vendor/google/seed/seed-vendor.mk)
