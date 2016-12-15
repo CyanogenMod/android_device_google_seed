@@ -408,7 +408,7 @@ vendor/lib/libdisp-aba.so|1b9640a8a5ea769fc5f5599bb26f679b7b984736
 vendor/lib/libmm-abl.so|ed53223a798c1897fc4368a3ce2c46c34e44c2e0
 vendor/lib/libmm-abl-oem.so|5940ead47b7ef85315d0ca0ad7ba126d2ac10b06
 vendor/lib/libmm-als.so|0d3504a0536c0ceb9f4c20f13f7abd5558c068f2
--vendor/lib/libmm-disp-apis.so|9e93b3bbca952dd7e474ba643431ddcacd6e9792
+vendor/lib/libmm-disp-apis.so|9e93b3bbca952dd7e474ba643431ddcacd6e9792
 vendor/lib/libmm-qdcm.so|c04317a68c2b6581fc908edc9137c8fae8ef1575
 
 
@@ -435,17 +435,17 @@ vendor/lib/libqmi.so|5251426638ec6ace5e399e9c541f3c846acb9f52
 vendor/lib/libsmemlog.so|b87c633d0faa143db4744bd17de5b03d600df15e
 
 # Radio (jalebi)
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|250eeb259f908070ac302ce66832d0c030473015
 -app/shutdownlistener/shutdownlistener.apk|bb1577ef19b491cbd343a15714d9dd7e5e761689
-bin/netmgrd|da382606d916b331a8bd5eae151dbd245ae26063 
+bin/netmgrd|da382606d916b331a8bd5eae151dbd245ae26063
 bin/qmuxd|6ff5f50f05973c34cc4516e5b4f5ca9c400bf94d
 bin/radish|cd024f6b00374889b2d8c32e56aa615488dfa1e2
 bin/rfs_access|25e77d90e5570369a7e1b2d3e759bd54e441c47d
 bin/rmt_storage|079e247fbebeb215de4775a842d77b086304f322
 etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
--framework/qcnvitems.jar|c07b1cc603c84414ee1b33749ea492b9d7a9e181 
+-framework/qcnvitems.jar|c07b1cc603c84414ee1b33749ea492b9d7a9e181
 -framework/qcrilhook.jar|d8cd25a1ca0a49c1a69d856d8846a517725785ec
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|250eeb259f908070ac302ce66832d0c030473015
 vendor/lib/libcneapiclient.so|1cd1a5a4db60d1b2f99a124663eba3b10cbb5c89
 vendor/lib/libconfigdb.so|0baff7fcba0f1a22b8ec1b08f6068579ed527452
 vendor/lib/liblqe.so|e4a40f8675c5b52f1bb71aa2fea62d7ffcd9b003
